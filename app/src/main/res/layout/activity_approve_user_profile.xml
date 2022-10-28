@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.adminRelatedActivities.AdminDashboard">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBackground"
+                android:orientation="vertical"
+                android:weightSum="100"
+                tools:context=".activities.mediaUploadActivites.captureAndUpload.UploadActivity">
+
+                <include
+                    android:id="@+id/toolbar_agreement"
+                    layout="@layout/toolbar_item" />
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="5"
+                    android:fontFamily="@font/lato"
+                    android:padding="@dimen/padding_14dp"
+                    android:text="User Name"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/heading_size" />
+
+
+                <TextView
+                    android:id="@+id/userEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/lato"
+                    android:text="abc@gmail.com"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_8dp"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:id="@+id/userMobileLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:fontFamily="@font/lato"
+                        android:text="Phone:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/userMobile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:fontFamily="@font/lato"
+                        android:text="9999999999"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    android:id="@+id/agreementLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/lato"
+                    android:text="Agreement"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/normal_font_size" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/agreementImage"
+                    android:layout_width="250dp"
+                    android:layout_height="350dp"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="@dimen/padding_8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/approveUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/padding_8dp"
+                    android:padding="@dimen/padding_14dp"
+                    android:text="Approve User"
+                    app:icon="@drawable/ic_baseline_how_to_reg_24" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <LinearLayout
+        android:id="@+id/footerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/register_toolbar"
+            layout="@layout/footer_layout" />
+    </LinearLayout>
+
+</RelativeLayout>

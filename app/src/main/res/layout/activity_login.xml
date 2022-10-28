@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.accountRelatedActivities.UserLoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/large_padding"
+                android:layout_marginTop="@dimen/large_padding"
+                app:cardCornerRadius="@dimen/standard_padding"
+                app:cardElevation="@dimen/standard_padding"
+                app:strokeColor="@color/colorPrimary"
+                app:strokeWidth="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_8dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="@dimen/large_padding"
+                        android:fontFamily="@font/lato"
+                        android:padding="@dimen/padding_8dp"
+                        android:paddingTop="@dimen/paddingTop"
+                        android:text="@string/welcomeText"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato"
+                        android:gravity="left"
+                        android:padding="@dimen/padding_8dp"
+                        android:text="@string/kle_samsung_data_capture_framework"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_message_size" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/userUSNLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Login with email"
+                        android:padding="@dimen/padding_8dp"
+                        app:boxCornerRadiusBottomStart="@dimen/corner_radius_medium"
+                        app:boxCornerRadiusTopEnd="@dimen/corner_radius_medium"
+                        app:boxStrokeColor="@color/colorPrimary"
+                        app:startIconDrawable="@drawable/ic_baseline_account_circle_24">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/userEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/userPasswordLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/passwordHint"
+                        android:padding="@dimen/padding_8dp"
+                        app:boxCornerRadiusBottomStart="@dimen/corner_radius_medium"
+                        app:boxCornerRadiusTopEnd="@dimen/corner_radius_medium"
+                        app:boxStrokeColor="@color/colorPrimary"
+                        app:passwordToggleEnabled="true"
+                        app:startIconDrawable="@drawable/ic_baseline_verified_user_24">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/userPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <TextView
+                        android:id="@+id/resendPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:fontFamily="@font/lato"
+                        android:padding="@dimen/padding_14dp"
+                        android:text="@string/resetPassword"
+                        android:textColor="@color/grey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/loginButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:fontFamily="@font/lato"
+                            android:insetBottom="0dp"
+                            android:text="@string/loginText" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/lato"
+                            android:padding="@dimen/padding_8dp"
+                            android:text="or"
+                            android:textColor="@color/black" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/backToRegister"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="49"
+                            android:fontFamily="@font/lato"
+                            android:insetBottom="0dp"
+                            android:text="@string/registerText" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/updateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_8dp"
+            android:visibility="gone"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:fontFamily="@font/lato"
+                android:text="@string/new_update_available"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_message_size" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/downloadUpdateButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:text="Download" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/register_toolbar"
+            layout="@layout/footer_layout" />
+    </LinearLayout>
+</RelativeLayout>

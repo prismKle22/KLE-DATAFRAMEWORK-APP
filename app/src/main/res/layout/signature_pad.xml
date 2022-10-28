@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.mySignConsent.MySignConsentActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.0px"
+        android:elevation="8dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="@dimen/corner_radius_medium"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonClear"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="111dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageHumanCentric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_8dp"
+                android:src="@drawable/upload_icon"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textHumanCentric"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                android:layout_marginEnd="@dimen/margin"
+                android:layout_marginBottom="@dimen/margin"
+                android:layout_toRightOf="@id/imageHumanCentric"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                android:padding="@dimen/padding_8dp"
+                android:text="Cancel"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/buttonClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.0px"
+        android:elevation="8dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="@dimen/corner_radius_medium"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonOk"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonCancel" >
+
+        <RelativeLayout
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageHumanCentric2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_8dp"
+                android:src="@drawable/upload_icon"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textHumanCentric2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                android:layout_marginEnd="@dimen/margin"
+                android:layout_marginBottom="@dimen/margin"
+                android:layout_toRightOf="@id/imageHumanCentric2"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                android:padding="@dimen/padding_8dp"
+                android:text="Clear"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/buttonOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.0px"
+        android:elevation="8dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="@dimen/corner_radius_medium"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonClear" >
+
+        <RelativeLayout
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageHumanCentric3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_8dp"
+                android:src="@drawable/upload_icon"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textHumanCentric3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                android:layout_marginEnd="@dimen/margin"
+                android:layout_marginBottom="@dimen/margin"
+                android:layout_toRightOf="@id/imageHumanCentric3"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                android:padding="@dimen/padding_8dp"
+                android:text="OK"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <com.samsung.prism.android.app.aidatacapture.activities.mySignConsent.SignatureView
+        android:id="@+id/signatureView"
+        android:layout_width="348dp"
+        android:layout_height="256dp"
+        android:layout_marginBottom="16dp"
+        android:background="#F4E7E7"
+        android:backgroundTint="#EAE0E0"
+        app:layout_constraintBottom_toTopOf="@+id/buttonClear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+<!--    <ScrollView-->
+<!--        android:layout_width="426dp"-->
+<!--        android:layout_height="485dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/signatureView"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.253"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.474">-->
+<!--        <HorizontalScrollView-->
+<!--            android:layout_width="426dp" android:layout_height="485dp">-->
+<!--        <TextView-->
+<!--            android:id="@+id/textView"-->
+<!--            android:layout_width="426dp"-->
+<!--            android:layout_height="485dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:text="@string/textview"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/signatureView"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+<!--        </HorizontalScrollView>-->
+<!--    </ScrollView>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

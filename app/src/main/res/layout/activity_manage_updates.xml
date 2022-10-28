@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.UserUploadMenuActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            android:orientation="vertical"
+            android:weightSum="100"
+            tools:context=".activities.mediaUploadActivites.captureAndUpload.UploadActivity">
+
+            <include
+                android:id="@+id/toolbar_agreement"
+                layout="@layout/toolbar_item" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_8dp"
+                app:cardCornerRadius="@dimen/standard_padding"
+                app:cardElevation="@dimen/standard_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/lato"
+                        android:padding="@dimen/padding_8dp"
+                        android:text="Manage Updates"
+                        android:textSize="@dimen/heading_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/lato"
+                        android:padding="@dimen/padding_8dp"
+                        android:text="Current Version"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/normal_font_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/lato"
+                        android:padding="@dimen/padding_8dp"
+                        android:text="1.0"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/heading_size" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/update_url"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Paste Update URL."
+                        android:padding="@dimen/padding_8dp"
+                        app:boxCornerRadiusBottomStart="@dimen/corner_radius_medium"
+                        app:boxCornerRadiusTopEnd="@dimen/corner_radius_medium"
+                        app:boxStrokeColor="@color/colorPrimary"
+                        app:startIconDrawable="@drawable/ic_baseline_insert_link_24">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/update_url_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/update_description"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Update Description."
+                        android:padding="@dimen/padding_8dp"
+                        app:boxCornerRadiusBottomStart="@dimen/corner_radius_medium"
+                        app:boxCornerRadiusTopEnd="@dimen/corner_radius_medium"
+                        app:boxStrokeColor="@color/colorPrimary"
+                        app:startIconDrawable="@drawable/ic_baseline_description_24">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/update_description_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/padding_8dp"
+                        android:weightSum="100">
+
+                        <RelativeLayout
+                            android:id="@+id/version_layout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/large_padding"
+                            android:layout_weight="50">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/increment_button_version"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:text="+" />
+
+                            <TextView
+                                android:layout_toRightOf="@id/increment_button_version"
+                                android:id="@+id/version"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1"
+                                android:layout_margin="@dimen/padding_8dp"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/lato"
+                                android:textSize="@dimen/heading_size"/>
+
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_toRightOf="@+id/version"
+                                android:id="@+id/decrement_button_version"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:text="-" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/sub_version_layout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/large_padding"
+                            android:layout_weight="50">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/increment_button_sub_version"
+                                android:layout_width="70dp"
+                                android:layout_toLeftOf="@id/sub_version"
+                                android:layout_height="wrap_content"
+                                android:text="+" />
+
+                            <TextView
+                                android:layout_toLeftOf="@id/decrement_button_sub_version"
+                                android:id="@+id/sub_version"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1"
+                                android:layout_margin="@dimen/padding_8dp"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/lato"
+                                android:textSize="@dimen/heading_size"/>
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/decrement_button_sub_version"
+                                android:layout_width="70dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_height="wrap_content"
+                                android:text="-" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                 <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/padding_8dp"
+                        android:weightSum="100">
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_marginRight="@dimen/large_padding"
+                         android:layout_weight="50">
+
+                         <TextView
+                             android:layout_width="70dp"
+                             android:layout_height="wrap_content"
+                             android:text="Version"
+                             android:fontFamily="@font/lato"
+                             android:textSize="@dimen/normal_font_size"
+                             android:layout_centerHorizontal="true"/>
+
+                     </RelativeLayout>
+                 </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/footerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/register_toolbar"
+            layout="@layout/footer_layout" />
+    </LinearLayout>
+
+</RelativeLayout>

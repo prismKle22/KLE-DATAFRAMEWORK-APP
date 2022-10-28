@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.adminRelatedActivities.AdminDashboard">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBackground"
+                android:orientation="vertical"
+                android:weightSum="100"
+                tools:context=".activities.mediaUploadActivites.captureAndUpload.UploadActivity">
+
+                <include
+                    android:id="@+id/toolbar_agreement"
+                    layout="@layout/toolbar_item" />
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="5"
+                    android:fontFamily="@font/lato"
+                    android:padding="@dimen/padding_14dp"
+                    android:textAlignment="center"
+                    android:text="User Name"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/heading_size" />
+
+                <TextView
+                    android:id="@+id/userEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="5"
+                    android:fontFamily="@font/lato"
+                    android:padding="@dimen/padding_14dp"
+                    android:text="User Email"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/normal_font_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin"
+                        android:layout_weight="50"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/corner_radius_medium"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/lato"
+                                android:padding="@dimen/padding_8dp"
+                                android:text="Total Uploads"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_message_size" />
+
+
+                            <TextView
+                                android:id="@+id/totalUploads"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/lato"
+                                android:padding="@dimen/padding_8dp"
+                                android:text="1,200"
+                                android:textColor="@color/green"
+                                android:textSize="@dimen/normal_font_size" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin"
+                        android:layout_weight="50"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:padding="@dimen/padding_14dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/corner_radius_medium"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/lato"
+                                android:padding="@dimen/padding_8dp"
+                                android:text="Text Centric"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_message_size" />
+
+
+                            <TextView
+                                android:id="@+id/noOfTextCentric"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/lato"
+                                android:padding="@dimen/padding_8dp"
+                                android:text="1,200"
+                                android:textColor="@color/green"
+                                android:textSize="@dimen/normal_font_size" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin"
+                        android:layout_weight="50"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:padding="@dimen/padding_14dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/corner_radius_medium"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/lato"
+                                android:padding="@dimen/padding_8dp"
+                                android:text="Human Centric"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_message_size" />
+
+                            <TextView
+                                android:id="@+id/noOfHumanCentric"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/lato"
+                                android:padding="@dimen/padding_8dp"
+                                android:text="1,200"
+                                android:textColor="@color/green"
+                                android:textSize="@dimen/normal_font_size" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin"
+                        android:layout_weight="50"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:padding="@dimen/padding_14dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/corner_radius_medium"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/lato"
+                                android:gravity="center"
+                                android:padding="@dimen/padding_8dp"
+                                android:text="Non-Human Centric"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_message_size" />
+
+
+                            <TextView
+                                android:id="@+id/noOfNonHumanCentric"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/lato"
+                                android:padding="@dimen/padding_8dp"
+                                android:text="1,200"
+                                android:textColor="@color/green"
+                                android:textSize="@dimen/normal_font_size" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/goBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Go Back" />
+
+            </LinearLayout>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/register_toolbar"
+            layout="@layout/footer_layout" />
+    </LinearLayout>
+
+</RelativeLayout>

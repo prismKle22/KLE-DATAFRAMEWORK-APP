@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KLE-SAMSUNG Data Capture Framework</string>
+    <string name="toolbar">Toolbar</string>
+    <string name="reg_heding">Enter Your Details</string>
+    <string name="option_1">People</string>
+    <string name="option_2">Text</string>
+    <string name="option_3">Natural</string>
+    <string name="btnTakePicture">Capture Image</string>
+    <string name="btnRecordVideo">Record Video</string>
+    <string name="loginWithEmail">Login with Email</string>
+    <string name="or">(or)</string>
+    <string name="btnUploadToServer">Upload to Server</string>
+    <string name="txtCredits"><a href="https://www.samsung.com/us/account/privacy-policy/">Samsung Privacy Policy</a></string>
+    <string name="passwordHint">Enter password</string>
+    <string name="resetPassword">Forgot Passowrd?</string>
+    <string name="loginText">Login</string>
+    <string name="registerText">Register</string>
+    <string name="downloadText">Download</string>
+    <string name="downloadAgreementButton">Download Agreement</string>
+    <string name="agreement_description">Click above button to download agreement.</string>
+    <string name="download_consent_button">Download Consent</string>
+    <string name="consent_description">Click above button to download consent.</string>
+    <string name="next">Next</string>
+    <string name="full_name">Enter Full Name</string>
+    <string name="email">Enter Email</string>
+    <string name="password">Enter Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="request_otp">Request OTP</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="upload_agreement">Upload Agreement</string>
+    <string name="user_dashboard">User Dashboard</string>
+    <string name="a_kannada"><b>ಅ</b></string>
+    <string name="a_hindi"><b>अ</b></string>
+    <string name="a_english"><b>A</b></string>
+    <string name="capture_agreement">Capture Agreement</string>
+    <string name="upload_agreement_button">Upload Agreement</string>
+    <string name="agrre_and_register">Agree and Register</string>
+    <string name="welcomeText">Welcome!</string>
+    <string name="total_uploads">Total Uploads</string>
+    <string name="human_centric">Human Centric</string>
+    <string name="text_centric">Text Centric</string>
+    <string name="non_human_centric">Non-Human Centric</string>
+    <string name="total_qc_passed_images">Total QC Passed Images</string>
+    <string name="select_category">Select Category</string>
+    <string name="capture_consent_text">Capture Consent</string>
+    <string name="capture_consent">Capture Consent</string>
+    <string name="collective_upload">Collective Upload</string>
+    <string name="capture_image_one">Capture Image One at a Time.</string>
+    <string name="upload_one_or_more">Upload one or more Images.</string>
+    <string name="upload_consent_text">Upload Consent</string>
+    <string name="select_1_or_more_images_to_upload">Select 1 or more images to upload</string>
+    <string name="upload_images">Upload Images</string>
+    <string name="select_1_or_more_videos_to_upload">Select 1 or more videos to upload</string>
+    <string name="data_upload">Data Upload</string>
+    <string name="one_time_capture">One time capture</string>
+    <string name="multiple_uploads">Multiple uploads</string>
+    <string name="one_time_record">One time record</string>
+    <string name="feedback">Feedback</string>
+    <string name="kle_samsung_privacy_policy">KLE Samsung Privacy Policy</string>
+    <string name="add_meta_data">Add Meta data</string>
+    <string name="data_major_category">Data Major Category</string>
+    <string name="sub_location">Sub Location</string>
+    <string name="timing">Timing</string>
+    <string name="lighting">Lighting</string>
+    <string name="enter_lighting">Enter Lighting</string>
+    <string name="is_human_present">Is Human Present?</string>
+    <string name="selfie">Selfie</string>
+    <string name="type">Type</string>
+    <string name="person_above_18_years">Person above 18 years</string>
+    <string name="props">Props</string>
+    <string name="consent_obtained">Consent Obtained</string>
+    <string name="menu">Menu</string>
+    <string name="upload">Upload</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="sub_category">Sub Category</string>
+    <string name="category">Category</string>
+    <string name="logoutString">Logout</string>
+    <string name="do_you_want_to_logout">Do you want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="enter_feedback">Enter Feedback</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="update_password">Update Password</string>
+    <string name="submit_feedback">Submit Feedback</string>
+    <string name="exit">Exit</string>
+    <string name="upload_successful">Upload Successful!</string>
+    <string name="do_you_want_to_upload_more">Do you want to upload more?</string>
+    <string name="do_you_want_to_exit">Do you want to exit?</string>
+    <string name="total_videos_uploaded">Total Videos Uploaded: </string>
+    <string name="total_images_uploaded">Total Videos Uploaded: </string>
+    <string name="new_update_available">New update Available</string>
+    <string name="register_here">I am new user <b>Register Here</b></string>
+    <string name="pdf" translatable="false">PDF</string>
+    <string name="doc" translatable="false">Doc</string>
+    <string name="typetxt" translatable="false">Type Text</string>
+    <string name="upload_text" translatable="false">Upload Text</string>
+    <!--TODO("Translation)-->
+    <string name="upload_consent">Upload Consent</string>
+    <string name="label_image">Image Labeling</string>
+    <string name="change_language">Change Language</string>
+    <string name="go_to_menu">Go to Menu</string>
+    <string name="give_feedback">Give Feedback</string>
+    <string name="your_contribution">Your Contributions</string>
+    <string name="good_morning">Good Morning</string>
+    <string name="good_afternoon">Good Afternoon</string>
+    <string name="good_evening">Good Evening</string>
+    <string name="hi_template">Hello, %1$s</string>
+    <string name="good_night">It\'s almost sleep time</string>
+    <string name="label">"Enter Text "</string>
+    <string name="view_users" translatable="false">View Users</string>
+    <string name="approve_users" translatable="false">Approve Users</string>
+    <string name="launch_app">Launch App</string>
+    <string name="logout">Logout</string>
+    <string name="overall_status">Server Statistics</string>
+    <string name="audio_stats">Total Audios</string>
+    <string name="image_stats">Total Images/Videos</string>
+    <string name="total_images">Total Images/Videos :  %1$s</string>
+    <string name="total_audio">Total Audios :  %1$s</string>
+    <string name="overall_contrib">Overall Contribution :  %1$s</string>
+    <string name="good_afternoon_admin">Good Afternoon, %1$s</string>
+    <string name="pick_file">Pick File</string>
+    <string name="permissions_required">Permissions Grant\'s Required</string>
+    <string name="allow">Allow Permission</string>
+    <string name="in_order_to_make_this_app_fully_functional_on_your_device_you_must_allow_grant_the_all_permissions_if_you_don_t_grant_all_permissions_the_app_will_miss_behave_n_nnote_you_might_contact_your_administrator_for_more_info">In order to make this app fully functional on your device you must allow/grant the all permissions. If you don\'t grant all permissions the app will miss behave.\n\nNote : You might contact your administrator for more info</string>
+    <string name="read_whole_consent_before_signing">Read whole consent before signing.</string>
+    <string name="agreement">I agree to all the terms and conditions.</string>
+    <string name="clear_pad">Erase</string>
+    <string name="save_signature">Save</string>
+    <string name="compress_signature">Scale 50%</string>
+    <string name="hello">Hello</string>
+    <string name="capture_image">Capture Image</string>
+    <string name="upload_video">Upload Video</string>
+    <string name="upload_media">Upload Media</string>
+    <string name="consent_form">I understand that SRI-B is building a database of images (separate set of images consist of full human body and face), videos (capturing human body while being engaged in sports and activities) and audio (Human Voice/Speech) (“Personal Data”) and has engaged the services of Agent for the same. SRI-B and its Affiliates, intends to use the said Personal Data for research and development purposes (“Purpose/ Program”) of features related to Samsung Products.\n
+I understand that Agent is the authorized partner of SRI-B to collect my Personal Data on behalf of SRI-B. I also understand that participation in the Purpose/ Program is purely voluntary.\n
+        <b>I hereby declare that:</b>\n
+\t1.\t I have understood the Purpose/Program.\n
+\t2.\t I have voluntarily agreed to participate in the Purpose/ Program and I am voluntarily providing/allowing Agent to collect, and share my Personal Data (mentioned below)\n
+\t3.\t The Personal Information provided by me may be archived and used for future research and development purposes by SRI – B and its Affiliates worldwide\n
+\t\t<b>Personal Data:</b>\n
+\t\t\ta. Human Images (Face, Body, Hand gestures, etc.)\n
+\t\t\tb. Human Videos (Face, Body, Hand gestures, Human in various activities, sports, actions, etc.)\n
+\t\t\tc. Human Voice / Audio / Speech\n
+<b>I understand that:</b>\n
+\t i)\tSRI-B or its Affiliates may share my Personal Data with their business partners/service providers for the Purpose.\n
+\t ii)\tSRI-B and its Affiliates will be using the Personal data and the said data will be deployed in Samsung products, but without disclosing the identity through the personal data collected.\n
+\t iii)\tPersonal Data provided by me will be protected as per Samsung Global Privacy Policy.\n
+I hereby agree to keep my participation in the Program strictly confidential and shall not disclose the details of the Purpose/ Program to any third party.\n
+I hereby acknowledge that I have knowingly and voluntarily, without duress or reservation of any kind, signed this consent form.\n
+
+<b>Definitions/Details of Agent &amp; SRI-B</b>\n
+KLE Technological University a university registered under UGC in India having its registered office at B. V. Bhoomaraddi Campus, Vidyanagar, Hubballi (India) (“Agent”)
+Samsung R&amp;D Institute India-Bangalore Private Limited a company incorporated in India having its registered office at 2870, Phoenix Building, Bagmane Constellation Business Park, Outer Ring Road, Doddanekundi Circle,  Marathahalli Post, Bangalore – 560 037 (“SRI-B”) and shall include its Affiliates also.
+Affiliate” means an entity that directly or indirectly Controls, is Controlled by, or is under common Control with another entity, so long as such Control exists. For the purpose of this definition, “Control” means beneficial ownership of more than 50% (fifty percent) of the voting power or equity in an entity.\n\n\n
+</string>
+    <string name="permission_granted">Permission already granted</string>
+    <string name="response_successfull">Response is Successful</string>
+    <string name="getting_started_text">Getting started, It\'s almost done</string>
+    <string name="please_wait_text">Please wait...</string>
+    <string name="inavlid_email">Invalid Email</string>
+    <string name="inavlid_password">Invalid Password</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="otp_msg">An OTP has been sent to your mobile number. \n \nThe system will try to auto detect the sms. You can manually enter OTP if not detected automatically.</string>
+    <string name="press_back_to_exit">Press back again to exit.</string>
+    <string name="mobile_number_exist">Mobile Number Already Exist</string>
+    <string name="email_exist">Email Already Exist</string>
+    <string name="enter_mobile_number_first">Enter MobileNumber First!</string>
+    <string name="invalid_number">Invalid Mobile Number</string>
+    <string name="otp_already_sent">OTP Already Sent!</string>
+    <string name="please_login">Please Login...</string>
+    <string name="otp_verfied_successfully">OTP Verified Successfully</string>
+    <string name="user_already_exist">User account already exist!</string>
+    <string name="user_creation_failed">User Creation Failed!</string>
+    <string name="invalid_input">Invalid Input</string>
+    <string name="password_not_matched">Password not matched</string>
+    <string name="password_validation_text">Password should be minimum 3 letters</string>
+    <string name="all_users_verfied">All users are verified.</string>
+    <string name="no_users_found">No new users found.</string>
+    <string name="user_approved">User Approved.</string>
+    <string name="user_approved_successfully">User Approved Successfully!</string>
+    <string name="select_two_or_more_images">Select 2 or more Images</string>
+    <string name="uploading_status">Uploading...</string>
+    <string name="total_uploaded_images">Total Uploaded Images :</string>
+    <string name="sorry_file_path_is_missing">Sorry, file path is missing!</string>
+    <string name="internet_not_avilable">Internet not available</string>
+    <string name="upload_suceess_dialogue_message">Upload Successful!</string>
+    <string name="upload_more_messgae">Do you want to upload more?</string>
+    <string name="feedback_msg">Feedback</string>
+    <string name="uploading_media">Uploading media ...</string>
+    <string name="samsung_agreement">Samsung_Agreement</string>
+    <string name="samsung_consent">Samsung_Consent</string>
+    <string name="file_downloaded_at">File Downloaded at Downloads</string>
+    <string name="date_file">Date: </string>
+    <string name="signature_text">Signature            </string>
+    <string name="getting_categories_msg">Getting Categories, Please wait...</string>
+    <string name="google_url">www.google.com</string>
+    <string name="kle_samsung_data_capture_framework">KLE-SAMSUNG Data Capture Framework</string>
+    <string name="agreement_uploaded">Agreement Uploaded</string>
+    <string name="potrait_text">Portrait</string>
+    <string name="language">Language</string>
+    <string name="content">Content</string>
+    <string name="readability">Readability</string>
+    <string name="clarity">Clarity</string>
+    <string name="real_speech">Real Speech</string>
+    <string name="speaker">Speaker</string>
+    <string name="gender">Gender</string>
+    <string name="source_distance">Source Distance</string>
+    <string name="languages">Languages</string>
+    <string name="multiple_speakers">Multiple Speakers</string>
+    <string name="device">Device</string>
+    <string name="noise">Noise</string>
+    <string name="source">Source</string>
+    <string name="source_model">Source Model</string>
+    <string name="location">Location</string>
+    <string name="duration">Duration</string>
+    <string name="noise_object">Noise Object</string>
+    <string name="multiple_noise">Multiple Noise</string>
+    <string name="age_group">Age Group</string>
+    <string name="recordings">Recording</string>
+    <string name="upload_audio">Upload Audio</string>
+    <string name="record_audio">Record Audio</string>
+    <string name="another_audio_playing_toast_msg">Another recording is just playing! Wait until it\'s finished!</string>
+    <string name="play_button">Play</string>
+    <string name="add_more">Add More</string>
+    <string name="kletech_web_address">www.kletech.ac.in</string>
+    <string name="please_wait_uploading">Please wait uplaoding...</string>
+    <string name="uploading_failed">Uploading Failed</string>
+    <string name="file_deleted_successfully">File deleted successfully!</string>
+    <string name="select_two_or_more_audio_files">Select two or more audio files.</string>
+    <string name="file_delete_failed">File delete failed.</string>
+    <string name="total_uploaded_audio">Total uploaded audios: </string>
+    <string name="select_one_or_more_audio_file_to_upload">Select one or more audio file to upload</string>
+    <string name="what_would_you_like_to_help_with">What would you like to do?</string>
+    <string name="image_video_capture">Image/Video Capture</string>
+    <string name="audio_upload">Audio Upload</string>
+    <string name="overall_contributions">Overall Contributions</string>
+    <string name="audio_contributions">Audio Contributions</string>
+    <string name="image_video_contributions">Image/Video Contributions</string>
+    <string name="sign_consent">Sign Consent</string>
+    <string name="input_dialogue_title_name">Enter Name</string>
+    <string name="input_dialogue_title_email">Enter Email</string>
+    <string name="agree">Next</string>
+    <string name="disagree">Cancel</string>
+    <string name="wait_message">Please wait for a while after clicking on save button.</string>
+    <string name="I_give_consent_text">I give consent by signing this</string>
+    <string name="name_consent">Name of the person giving consent.</string>
+    <string name="email_consent">Email of the person giving consent.</string>
+    <string name="valid_email">Please enter valid email.</string>
+    <string name="upload_files">Upload Files</string>
+    <string name="file_type">file type</string>
+    <string name="File_type">File Type</string>
+    <string name="select_one_or_more_text_file_to_upload">Select one or more text files to upload</string>
+    <string name="capture_and_upload">Capture and Upload</string>
+    <string name="mail_has_been_sent">Consent Sent to your Mail</string>
+    <string name="do_you_want_to_upload_more_consent">Do you want to upload more consent ?</string>
+    <string name="input_dialogue_title_place">Enter Place</string>
+    <string name="place_consent">Place</string>
+    <string name="corpus_sms">Corpus sms</string>
+    <string name="text">Text</string>
+    <string name="translation">Translation</string>
+    <string name="title_activity_super_meta_data_text">SuperMetaDataText</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_meta_data_super_text">MetaDataSuperTextActivity</string>
+    <string name="title_activity_corpussmstext">CorpussmstextActivity</string>
+    <string name="corpus_class">Class</string>
+    <string name="personality">Personality</string>
+    <string name="mood">Mood</string>
+    <string name="age">Age</string>
+    <string name="text_class">Class</string>
+    <string name="tag">Tag</string>
+    <string name="standard">Standard</string>
+    <string name="mixed_source">Mixed Source</string>
+    <string name="numbers">Numbers</string>
+    <string name="Does_text_contains_numbers">Does text contains numbers ?</string>
+    <string name="Is_multiple_languages_used_in_text">"Is multiple languages used in text ? "</string>
+</resources>

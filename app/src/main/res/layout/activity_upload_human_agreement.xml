@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.metaData.MetaDataHumanCentricActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            android:orientation="vertical"
+            android:weightSum="100"
+            tools:context=".activities.mediaUploadActivites.captureAndUpload.UploadHumanAgreementHelper">
+
+            <include
+                android:id="@+id/toolbar_agreement"
+                layout="@layout/toolbar_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_gravity="center"
+                android:fontFamily="@font/lato"
+                android:padding="@dimen/padding_14dp"
+                android:text="@string/upload_consent_text"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/heading_size" />
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:cardElevation="@dimen/cardview_default_elevation"
+                android:padding="@dimen/padding_8dp"
+                android:layout_margin="@dimen/margin"
+                app:cardCornerRadius="@dimen/corner_radius_medium">
+
+                <ImageView
+                    android:id="@+id/imgPreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/image_icon"
+                    android:visibility="visible" />
+
+                <!-- Videoview to preview recorded video -->
+
+                <VideoView
+                    android:id="@+id/videoPreview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="8dp"
+                    android:visibility="gone" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/txtPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/lato"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/txt_font"
+                android:textSize="30dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_margin="@dimen/large_padding"
+                android:progressTint="@color/colorPrimary"
+                android:layout_marginBottom="35dp"
+                android:visibility="gone" />
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/large_padding"
+                android:clipChildren="false"
+                android:layout_gravity="center"
+                android:clipToPadding="false"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0.0px"
+                android:elevation="8dp"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="@dimen/corner_radius_medium"
+                app:cardPreventCornerOverlap="false">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imageHumanCentric"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_8dp"
+                        android:visibility="gone"
+                        android:src="@drawable/upload_icon" />
+
+                    <TextView
+                        android:id="@+id/textHumanCentric"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_title_size"
+                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@id/imageHumanCentric"
+                        android:fontFamily="@font/lato"
+                        android:padding="@dimen/padding_8dp"
+                        android:text="Upload Consent"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/register_toolbar"
+            layout="@layout/footer_layout" />
+
+    </LinearLayout>
+
+</RelativeLayout>

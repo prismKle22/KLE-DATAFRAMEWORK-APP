@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".activities.MainActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="70"
+        android:background="@color/colorBackground">
+
+        <TextView
+            android:id="@+id/textview_sound_recorder_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/big_margin"
+            android:fontFamily="@font/lato"
+            android:text="@string/record_audio"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/textview_recording_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="00:00"
+            android:textSize="48dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_start_recording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/giant_margin"
+            android:layout_marginBottom="@dimen/big_margin"
+            android:src="@drawable/ic_record"
+            android:visibility="visible"
+            app:backgroundTint="@color/fab_background"
+            app:fabSize="normal"
+            app:tint="@color/holo_red" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_pause_recording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/giant_margin"
+            android:layout_marginBottom="@dimen/big_margin"
+            android:src="@drawable/ic_pause"
+            android:visibility="invisible"
+            app:backgroundTint="@color/fab_background"
+            app:fabSize="normal"
+            app:tint="@color/holo_red" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_resume_recording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/giant_margin"
+            android:layout_marginBottom="@dimen/big_margin"
+            android:src="@drawable/ic_record"
+            android:visibility="invisible"
+            app:backgroundTint="@color/fab_background"
+            app:fabSize="normal" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_stop_recording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/giant_margin"
+            android:layout_marginBottom="@dimen/big_margin"
+            android:src="@drawable/ic_stop"
+            android:visibility="visible"
+            app:backgroundTint="@color/fab_background"
+            app:fabSize="normal"
+            app:tint="@color/holo_red" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_recordings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="@dimen/giant_margin"
+            android:layout_marginBottom="@dimen/big_margin"
+            android:src="@drawable/ic_baseline_refresh_24"
+            app:backgroundTint="@color/fab_background"
+            app:fabSize="normal"
+            app:tint="@color/green" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:orientation="vertical"
+        android:paddingBottom="8dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_8dp"
+            app:strokeWidth="2dp"
+            android:layout_margin="@dimen/padding_8dp"
+            app:strokeColor="@color/colorPrimary"
+            app:cardCornerRadius="@dimen/padding_8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recordings"
+                android:layout_gravity="center"
+                android:textSize="@dimen/heading_size"
+                android:fontFamily="@font/montserrat"
+                android:padding="@dimen/padding_8dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recordings_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/toolbar"
+                android:nestedScrollingEnabled="false" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+</LinearLayout>

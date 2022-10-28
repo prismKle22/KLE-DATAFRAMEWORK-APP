@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    tools:context=".activities.PermissionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:padding="@dimen/large_padding"
+        android:background="?attr/colorPrimary"
+        android:id="@+id/request_permissions_layout"
+        android:layout_height="match_parent">
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Headline4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/large_padding"
+            android:text="@string/permissions_required"
+            android:textColor="?attr/colorOnPrimary"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:src="@drawable/ic_baseline_security_24"
+            android:layout_gravity="center"
+            app:tint="?attr/colorOnPrimary"
+            android:layout_margin="@dimen/large_padding"
+            android:layout_height="150dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            app:cardBackgroundColor="?attr/colorPrimary"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="@dimen/standard_padding"
+            app:strokeColor="?attr/colorSurface"
+            android:layout_margin="@dimen/large_padding"
+            app:strokeWidth="2dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/large_padding"
+                android:textColor="?attr/colorOnPrimary"
+                android:lineHeight="30dp"
+                android:text="@string/in_order_to_make_this_app_fully_functional_on_your_device_you_must_allow_grant_the_all_permissions_if_you_don_t_grant_all_permissions_the_app_will_miss_behave_n_nnote_you_might_contact_your_administrator_for_more_info"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/large_padding"
+            android:id="@+id/allow_permission"
+            android:text="@string/allow"
+            app:backgroundTint="?attr/colorSurface"
+            android:textColor="?attr/colorPrimary"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

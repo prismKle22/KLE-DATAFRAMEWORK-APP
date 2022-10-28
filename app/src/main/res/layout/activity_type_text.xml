@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.UserUploadMenuActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            android:orientation="vertical"
+            android:weightSum="100"
+            tools:context=".activities.mediaUploadActivites.captureAndUpload.UploadActivity">
+
+            <include
+                android:id="@+id/toolbar_agreement"
+                layout="@layout/toolbar_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="5"
+                android:fontFamily="@font/lato"
+                android:padding="@dimen/padding_14dp"
+                android:text="@string/typetxt"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/heading_size" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/large_padding"
+                    app:cardCornerRadius="@dimen/standard_padding"
+                    app:cardElevation="@dimen/standard_padding">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/saveText"-->
+            <!--                android:layout_width="390dp"-->
+            <!--                android:layout_height="404dp"-->
+            <!--                android:layout_marginLeft="12dp"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:background="@drawable/borders"-->
+            <!--                android:overScrollMode="always"-->
+            <!--                android:scrollbars="vertical"-->
+            <!--                android:scrollHorizontally="false"-->
+            <!--                tools:ignore="SpeakableTextPresentCheck" />-->
+
+            <!--            <Button-->
+            <!--                android:id="@+id/BtnUploadTypedText"-->
+            <!--                android:layout_width="100dp"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:layout_marginLeft="150dp"-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                android:text="Upload" />-->
+
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:hint="Input"
+                android:inputType="text" />
+
+            <!--Button with id showInput-->
+
+            <Button
+                android:id="@+id/showInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="show"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/footerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/register_toolbar"
+            layout="@layout/footer_layout" />
+    </LinearLayout>
+
+</RelativeLayout>

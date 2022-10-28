@@ -1,0 +1,16 @@
+Index: app/src/main/java/com/samsung/prism/android/app/aidatacapture/activities/audioRecorder/player/RecordingsActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/samsung/prism/android/app/aidatacapture/activities/audioRecorder/player/RecordingsActivity.kt	(date 1622037071380)
++++ app/src/main/java/com/samsung/prism/android/app/aidatacapture/activities/audioRecorder/player/RecordingsActivity.kt	(date 1622037071380)
+@@ -73,7 +73,7 @@
+         updateAdapter()
+     }
+ 
+-    private fun updateAdapter() {
++    fun updateAdapter() {
+         getRecording()
+         data = file
+         println("Updating Adapter")

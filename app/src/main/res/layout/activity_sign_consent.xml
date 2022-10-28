@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.SignConsentActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <include
+                android:id="@+id/toolbar_agreement"
+                layout="@layout/toolbar_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="5"
+                android:fontFamily="@font/lato"
+                android:padding="@dimen/padding_14dp"
+                android:text="@string/capture_consent_text"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/heading_size" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/cardview_default_radius">
+
+                    <TextView
+                        android:id="@+id/infoTxtCredits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/margin"
+                        android:layout_marginTop="@dimen/margintop"
+                        android:fontFamily="@font/lato"
+                        android:padding="@dimen/padding_8dp"
+                        android:text="@string/txtCredits"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorLink="@color/colorPrimary"
+                        android:textSize="@dimen/normal_font_size"
+                        android:visibility="gone"></TextView>
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- Capture picture button -->
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/btnSignConsent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/large_padding"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0.0px"
+                    android:elevation="8dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="@dimen/corner_radius_medium"
+                    app:cardPreventCornerOverlap="false">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imageHumanCentric"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_8dp"
+                            android:src="@drawable/agreement_icon" />
+
+                        <TextView
+                            android:id="@+id/textHumanCentric"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@id/imageHumanCentric"
+                            android:fontFamily="@font/lato"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_8dp"
+                            android:text="@string/sign_consent"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_8dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_8dp"
+                        android:src="@drawable/ic_baseline_info_24" />
+
+                    <TextView
+                        android:id="@+id/uploadingTextCapture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:padding="@dimen/padding_8dp"
+                        android:text="@string/read_whole_consent_before_signing"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/footerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/register_toolbar"
+            layout="@layout/footer_layout" />
+
+    </LinearLayout>
+
+</RelativeLayout>

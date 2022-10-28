@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/padding_8dp"
+    app:cardCornerRadius="@dimen/corner_radius_medium"
+    app:cardElevation="@dimen/small_elevation">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_8dp"
+        android:weightSum="100">
+
+
+        <TextView
+            android:id="@+id/recording_title_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="60"
+            android:fontFamily="@font/lato"
+            android:text="Title"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/small_text_size" />
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/delete"
+                    style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                    android:drawableTint="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_menu_delete_white_24dp" />
+
+                <Button
+                    android:id="@+id/upload"
+                    style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                    android:drawableTint="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_baseline_cloud_upload_24" />
+
+                <Button
+                    android:id="@+id/recording_image"
+                    style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                    android:drawableTint="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_baseline_play_circle_24" />
+
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

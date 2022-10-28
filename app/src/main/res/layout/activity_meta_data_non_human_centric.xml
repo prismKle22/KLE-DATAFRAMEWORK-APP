@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.metaData.MetaDataHumanCentricActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            android:orientation="vertical"
+            android:weightSum="100"
+            tools:context=".activities.mediaUploadActivites.captureAndUpload.UploadAgreementActivity">
+
+            <include
+                android:id="@+id/toolbar_agreement"
+                layout="@layout/toolbar_item" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_8dp">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_1"
+                        android:layout_width="wrap_content"
+                        app:chipBackgroundColor="@color/colorPrimary"
+                        android:layout_height="wrap_content"
+                        android:text="Category: Home"
+                        android:textColor="@color/white"
+                        app:chipStrokeColor="@color/black"
+                        app:chipIconTint="@color/white" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_2"
+                        android:layout_width="wrap_content"
+                        app:chipBackgroundColor="@color/colorPrimary"
+                        android:layout_height="wrap_content"
+                        android:text="Subcategory: People Centric"
+                        android:textColor="@color/white"
+                        app:chipStrokeColor="@color/black"
+                        app:chipIconTint="@color/white" />
+
+
+                </com.google.android.material.chip.ChipGroup>
+
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/cathead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:padding="@dimen/padding_8dp"
+                    android:text="Category:          "
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/normal_font_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/cathead"
+                    android:fontFamily="@font/lato"
+                    android:padding="@dimen/padding_8dp"
+                    android:text="Category Name"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/normal_font_size" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/subCathead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:padding="@dimen/padding_8dp"
+                    android:text="Sub Category:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/normal_font_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/subCat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/subCathead"
+                    android:fontFamily="@font/lato"
+                    android:padding="@dimen/padding_8dp"
+                    android:text="Category Name"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/normal_font_size" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="5"
+                android:fontFamily="@font/lato"
+                android:padding="@dimen/padding_14dp"
+                android:text="@string/add_meta_data"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/heading_size" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:paddingTop="@dimen/padding_8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/menu"
+                        android:padding="@dimen/padding_8dp"
+                        app:boxCornerRadiusBottomStart="@dimen/corner_radius_medium"
+                        app:boxCornerRadiusTopEnd="@dimen/corner_radius_medium"
+                        app:boxStrokeColor="@color/colorPrimary">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/data_major_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/location"
+                        android:padding="@dimen/padding_8dp"
+                        app:boxCornerRadiusBottomStart="@dimen/corner_radius_medium"
+                        app:boxCornerRadiusTopEnd="@dimen/corner_radius_medium"
+                        app:boxStrokeColor="@color/colorPrimary">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/location_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/sub_location"
+                        android:padding="@dimen/padding_8dp"
+                        app:boxCornerRadiusBottomStart="@dimen/corner_radius_medium"
+                        app:boxCornerRadiusTopEnd="@dimen/corner_radius_medium"
+                        app:boxStrokeColor="@color/colorPrimary">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/sub_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/sub_location_other_layout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter"
+                        android:padding="@dimen/padding_8dp"
+                        android:visibility="gone"
+                        app:boxStrokeColor="@color/colorPrimary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/sub_location_other"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/timing"
+                        android:padding="@dimen/padding_8dp"
+                        app:boxCornerRadiusBottomStart="@dimen/corner_radius_medium"
+                        app:boxCornerRadiusTopEnd="@dimen/corner_radius_medium"
+                        app:boxStrokeColor="@color/colorPrimary">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/timing"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/lighting"
+                        android:padding="@dimen/padding_8dp"
+                        app:boxCornerRadiusBottomStart="@dimen/corner_radius_medium"
+                        app:boxCornerRadiusTopEnd="@dimen/corner_radius_medium"
+                        app:boxStrokeColor="@color/colorPrimary">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/lighting"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/lighting_other_layout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Lighting"
+                        android:padding="@dimen/padding_8dp"
+                        android:visibility="gone"
+                        app:boxStrokeColor="@color/colorPrimary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/lighting_other"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/addMetaData"
+                        android:insetBottom="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_margin="@dimen/margin"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/lato"
+                        android:text="@string/next" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/footerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/register_toolbar"
+            layout="@layout/footer_layout" />
+    </LinearLayout>
+</RelativeLayout>

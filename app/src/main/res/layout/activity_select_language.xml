@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.adminRelatedActivities.AdminDashboard">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBackground"
+                android:orientation="vertical"
+                android:weightSum="100"
+                tools:context=".activities.mediaUploadActivites.captureAndUpload.UploadActivity">
+
+                <include
+                    android:id="@+id/toolbar_agreement"
+                    layout="@layout/toolbar_item" />
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="5"
+                    android:fontFamily="@font/lato"
+                    android:padding="@dimen/padding_14dp"
+                    android:text="Choose your language"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/heading_size" />
+
+                <TextView
+                    android:id="@+id/userEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="5"
+                    android:fontFamily="@font/lato"
+                    android:padding="@dimen/padding_14dp"
+                    android:text="User Email"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/normal_font_size"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/kannada_language"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin"
+                        android:layout_weight="50"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/corner_radius_medium"
+                        app:cardUseCompatPadding="true"
+                        app:strokeColor="@color/colorPrimary"
+                        app:strokeWidth="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_8dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/lato"
+                                android:padding="@dimen/padding_8dp"
+                                android:text="Kannada"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_message_size" />
+
+
+                            <TextView
+                                android:id="@+id/totalUploads"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/lato"
+                                android:padding="@dimen/padding_8dp"
+                                android:text="@string/a_kannada"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="40sp" />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/hindi_language"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin"
+                        android:layout_weight="50"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:padding="@dimen/padding_14dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/corner_radius_medium"
+                        app:cardUseCompatPadding="true"
+                        app:strokeColor="@color/colorPrimary"
+                        app:strokeWidth="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusableInTouchMode="true"
+                            android:padding="@dimen/padding_8dp"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/lato"
+                                android:padding="@dimen/padding_8dp"
+                                android:text="Hindi"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_message_size" />
+
+
+                            <TextView
+                                android:id="@+id/noOfTextCentric"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/lato"
+                                android:padding="@dimen/padding_8dp"
+                                android:text="@string/a_hindi"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="40sp" />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </LinearLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/english_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:clipChildren="false"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0.0px"
+                    android:padding="@dimen/padding_14dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/corner_radius_medium"
+                    app:strokeColor="@color/colorPrimary"
+                    app:strokeWidth="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        android:padding="@dimen/padding_8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/lato"
+                            android:padding="@dimen/padding_8dp"
+                            android:text="English"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_message_size" />
+
+                        <TextView
+                            android:id="@+id/qcCheckNumbers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/lato"
+                            android:padding="@dimen/padding_8dp"
+                            android:text="@string/a_english"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="40sp" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/register_toolbar"
+            layout="@layout/footer_layout" />
+    </LinearLayout>
+
+</RelativeLayout>

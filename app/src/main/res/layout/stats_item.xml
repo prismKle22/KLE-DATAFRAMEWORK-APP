@@ -1,0 +1,58 @@
+<LinearLayout android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/large_padding"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:id="@+id/overall_status_chart"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="48dp"
+            app:tint="?attr/colorPrimary"
+            android:id="@+id/toogle_all_status"
+            android:padding="@dimen/standard_padding"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_baseline_view_list_24"
+            android:layout_height="48dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/large_padding"
+        android:id="@+id/loading_all_stats"
+        android:indeterminate="true"
+        android:layout_height="wrap_content" />
+
+    <com.anychart.AnyChartView
+        android:id="@+id/statusPieChart"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/statusValuesContainer"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/total_response"
+        android:layout_marginTop="@dimen/large_padding"
+        android:text="@string/total_images"
+        android:textColor="?attr/colorPrimary"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

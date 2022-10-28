@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.samsung.prism.android.app.aidatacapture">
+    <!-- user Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:noHistory="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="sensorPortrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AIDataLab"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".activities.metaData.AddmetadataCorpussmsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.metaData.CorpussmstextActivity"
+            android:exported="false"
+            android:label="@string/title_activity_corpussmstext"
+            android:theme="@style/Theme.AIDataLab.NoActionBar" /> <!-- <activity -->
+        <!-- &lt;!&ndash;            android:name=".activities.metaData.MetaDataSuperTextActivity"&ndash;&gt; -->
+        <!-- android:exported="false" -->
+        <!-- android:label="@string/title_activity_meta_data_super_text" -->
+        <!-- android:theme="@style/Theme.AIDataLab.NoActionBar" /> -->
+        <activity
+            android:name=".activities.SuperMetaDataText"
+            android:exported="false"
+            android:label="@string/title_activity_super_meta_data_text"
+            android:theme="@style/Theme.AIDataLab.NoActionBar" />
+        <activity
+            android:name=".activities.mySignConsent.EmailConsentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.mediaUploadActivites.captureAndUpload.UploadCapturedImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.mySignConsent.MySignConsentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.TypeTextActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.textUploader.SubTextMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.textUploader.bulkTextUpload.UploadMultipleText"
+            android:exported="false" />
+        <activity
+            android:name=".activities.metaData.MetaDataTextActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.TextMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.adminRelatedActivities.ManageCategoryActivity"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".activities.adminRelatedActivities.ManageUpdatesActivity" />
+        <activity android:name=".activities.audioRecorder.SubAudioMenuActivity" />
+        <activity android:name=".activities.audioRecorder.AudioRecorderActivity" />
+        <activity android:name=".activities.metaData.MetaDataAudioActivity" />
+        <activity android:name=".activities.metaData.MetaDataWordImageActivity" />
+        <activity android:name=".activities.metaData.MetaDataTranslationActivity" />
+        <activity android:name=".activities.SigningCanvasActivity" />
+        <activity android:name=".activities.SignConsentActivity" />
+        <activity android:name=".activities.PermissionActivity" />
+        <activity android:name=".activities.audioRecorder.bulkAudioUpload.UploadMultipleAudio" />
+        <activity
+            android:name=".activities.AudioMenuActivity"
+            android:exported="false" />
+        <activity android:name=".activities.UserMenuActivity" />
+        <activity android:name=".activities.SelectLanguageActivity" />
+        <activity android:name=".activities.UpdatePassword" />
+        <activity android:name=".activities.adminRelatedActivities.ApproveUserProfile" />
+        <activity android:name=".activities.WaitForApprovalActivity" />
+        <activity android:name=".activities.KLEPrivacyPolicy" />
+        <activity
+            android:name=".activities.UserDashboard"
+            android:exported="true" />
+        <activity android:name=".activities.adminRelatedActivities.AdminApproveUsers" />
+        <activity android:name=".activities.UserDetails" />
+        <activity android:name=".activities.adminRelatedActivities.AdminViewUsers" />
+        <activity android:name=".activities.adminRelatedActivities.AdminDashboard" />
+        <activity android:name=".activities.PrivacyPolicyActivity" />
+        <activity android:name=".activities.DownloadAgreementActivity" />
+        <activity android:name=".activities.UserFeedBackActivity" />
+        <activity android:name=".activities.audioRecorder.player.RecordingsActivity" />
+        <activity android:name=".activities.mediaUploadActivites.bulkUpload.UploadMultipleVideo" />
+        <activity android:name=".activities.mediaUploadActivites.captureAndUpload.UploadHumanAgreementHelper" />
+        <activity android:name=".activities.mediaUploadActivites.bulkUpload.UploadMultipleHumanCentricAgreement" />
+        <activity android:name=".activities.mediaUploadActivites.captureAndUpload.UploadAgreementActivity" />
+        <activity android:name=".activities.mediaUploadActivites.bulkUpload.UploadMultipleImage" />
+        <activity android:name=".activities.UserUploadMenuActivity" />
+        <activity android:name=".activities.mediaUploadActivites.captureAndUpload.UploadAgreementHelper" />
+        <activity android:name=".activities.metaData.MetaDataNonHumanCentricActivity" />
+        <activity android:name=".activities.metaData.MetaDataHumanCentricActivity" />
+        <activity android:name=".activities.UserCategoryActivity" />
+        <activity android:name=".activities.mediaUploadActivites.captureAndUpload.UploadHumanCentricAgreementActivity" />
+        <activity android:name=".activities.UserMenu" />
+        <activity android:name=".activities.accountRelatedActivities.UserLoginActivity" />
+        <activity android:name=".activities.accountRelatedActivities.UserRegistration" />
+        <activity android:name=".activities.MainActivity" />
+        <activity
+            android:name=".activities.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

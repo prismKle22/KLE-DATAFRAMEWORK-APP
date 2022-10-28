@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.metaData.MetaDataHumanCentricActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            android:orientation="vertical"
+            android:weightSum="100"
+            tools:context=".activities.mediaUploadActivites.captureAndUpload.UploadActivity">
+
+            <include
+                android:id="@+id/toolbar_agreement"
+                layout="@layout/toolbar_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="5"
+                android:fontFamily="@font/lato"
+                android:padding="@dimen/padding_14dp"
+                android:text="@string/capture_consent_text"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/heading_size" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/cardview_default_radius">
+
+                    <TextView
+                        android:id="@+id/infoTxtCredits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/margin"
+                        android:layout_marginTop="@dimen/margintop"
+                        android:fontFamily="@font/lato"
+                        android:padding="@dimen/padding_8dp"
+                        android:text="@string/txtCredits"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorLink="@color/colorPrimary"
+                        android:textSize="@dimen/normal_font_size"
+                        android:visibility="gone"></TextView>
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- Capture picture button -->
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/btnCapturePicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/large_padding"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0.0px"
+                    android:elevation="8dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="@dimen/corner_radius_medium"
+                    app:cardPreventCornerOverlap="false">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imageHumanCentric"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_8dp"
+                            android:src="@drawable/agreement_icon" />
+
+                        <TextView
+                            android:id="@+id/textHumanCentric"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@id/imageHumanCentric"
+                            android:fontFamily="@font/lato"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_8dp"
+                            android:text="Single Capture"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_8dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_8dp"
+                        android:src="@drawable/ic_baseline_info_24" />
+
+                    <TextView
+                        android:id="@+id/uploadingTextCapture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:padding="@dimen/padding_8dp"
+                        android:text="@string/capture_image_one"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/btnUploadPDF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/large_padding"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0.0px"
+                    android:elevation="8dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="@dimen/corner_radius_medium"
+                    app:cardPreventCornerOverlap="false">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/pdfHumanCentric"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_8dp"
+                            android:src="@drawable/agreement_icon" />
+
+                        <TextView
+                            android:id="@+id/textHumanCentricPDF"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@id/pdfHumanCentric"
+                            android:fontFamily="@font/lato"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_8dp"
+                            android:text="Collective Upload"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_8dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_8dp"
+                        android:src="@drawable/ic_baseline_info_24" />
+
+                    <TextView
+                        android:id="@+id/uploadingText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:padding="@dimen/padding_8dp"
+                        android:text="@string/upload_one_or_more                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/progress_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:tint="@color/colorPrimary"
+                    android:visibility="gone"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/progress_bar_" />
+
+
+                <CheckBox
+                    android:id="@+id/agreementCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin"
+                    android:fontFamily="@font/lato"
+                    android:text="I accept all agreement"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/normal_font_size"
+                    android:visibility="gone" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAgreementNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/btn_bg"
+                    android:padding="@dimen/padding_8dp"
+                    android:text="@string/next"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    app:cornerRadius="@dimen/cardview_default_radius" />
+
+                <Button
+                    android:id="@+id/btnUploadImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/btn_bg"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Upload Images from Gallery"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/or"
+                    android:textColor="@color/txt_font"
+                    android:visibility="gone" />
+
+                <!-- Record video button -->
+
+                <Button
+                    android:id="@+id/btnRecordVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/btn_bg"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/btnRecordVideo"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnUploadVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margintop"
+                    android:background="@color/btn_bg"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Upload Video from Gallery"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/footerView"
+        app:tint="@color/white"
+        android:contentDescription="Sample Description Goes Here"
+        android:src="@drawable/ic_baseline_cloud_download_24" />
+
+    <LinearLayout
+        android:id="@+id/footerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/register_toolbar"
+            layout="@layout/footer_layout" />
+
+    </LinearLayout>
+
+</RelativeLayout>

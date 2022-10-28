@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="paddingTop">8dp</dimen>
+    <dimen name="paddingLeft">15sp</dimen>
+    <dimen name="paddingRight">15sp</dimen>
+    <dimen name="small_padding">4sp</dimen>
+    <dimen name="standard_padding">8dp</dimen>
+    <dimen name="paddingBottom">8dp</dimen>
+    <dimen name="padding">3dp</dimen>
+    <dimen name="margintop">10sp</dimen>
+    <dimen name="marginbottom">5sp</dimen>
+    <dimen name="marginleft">5sp</dimen>
+    <dimen name="marginright">5sp</dimen>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="drawable_padding">24dp</dimen>
+    <dimen name="text_size">22sp</dimen>
+    <dimen name="normal_padding">16dp</dimen>
+    <dimen name="margin">5sp</dimen>
+    <dimen name="heading_size">25sp</dimen>
+    <dimen name="normal_font_size">18sp</dimen>
+    <dimen name="small_text_size">16sp</dimen>
+    <dimen name="padding_8dp">8dp</dimen>
+    <dimen name="corner_radius_small">8dp</dimen>
+    <dimen name="corner_radius_medium">12dp</dimen>
+    <dimen name="corner_radius_large">24dp</dimen>
+    <dimen name="padding_14dp">14dp</dimen>
+    <dimen name="small_elevation">8dp</dimen>
+    <dimen name="large_padding">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="icon_size">48dp</dimen>
+    <dimen name="medium_margin">16dp</dimen>
+    <dimen name="big_margin">32dp</dimen>
+    <dimen name="giant_margin">64dp</dimen>
+</resources>

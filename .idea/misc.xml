@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.14907407407407408" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/background_gradient.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/drawable/borders.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_audiotrack_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_call_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_camera_enhance_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_cancel_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_category_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_check_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_check_circle_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_cloud_download_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_cloud_upload_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_description_24.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/drawable/ic_baseline_exit_to_app_24.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/drawable/ic_baseline_feedback_24.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/drawable/ic_baseline_fiber_pin_24.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/drawable/ic_baseline_how_to_reg_24.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/drawable/ic_baseline_insert_drive_file_24.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/drawable/ic_baseline_insert_link_24.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/drawable/ic_baseline_photo_size_select_actual_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_pie_chart_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_play_circle_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_push_pin_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_refresh_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_security_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_short_text_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_speaker_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_supervised_user_circle_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_surround_sound_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_system_update_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_verified_user_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_videocam_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_view_list_24.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_bookmark.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.22395833333333334" />
+        <entry key="app/src/main/res/drawable/shape.xml" value="0.168" />
+        <entry key="app/src/main/res/layout/activity_addmetadata_corpussms.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_admin_approve_users.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_admin_dashboard.xml" value="0.2180232558139535" />
+        <entry key="app/src/main/res/layout/activity_admin_view_users.xml" value="0.36141304347826086" />
+        <entry key="app/src/main/res/layout/activity_agreement.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_approve_user_profile.xml" value="0.35885416666666664" />
+        <entry key="app/src/main/res/layout/activity_audio.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_audio_recorder.xml" value="0.36141304347826086" />
+        <entry key="app/src/main/res/layout/activity_camera_upload.xml" value="0.15104166666666666" />
+        <entry key="app/src/main/res/layout/activity_class_name.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_corpussmstext.xml" value="0.35052083333333334" />
+        <entry key="app/src/main/res/layout/activity_download_agreement.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_email_consent.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/activity_feed_back.xml" value="0.2838541666666667" />
+        <entry key="app/src/main/res/layout/activity_human_centric_agreement.xml" value="0.15217391304347827" />
+        <entry key="app/src/main/res/layout/activity_image_labeling_helper.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_image_upload_non_human_centric.xml" value="0.182518115942029" />
+        <entry key="app/src/main/res/layout/activity_k_l_e_privacy_policy.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_manage_category.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/activity_manage_updates.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/activity_meta_data_audio.xml" value="0.36141304347826086" />
+        <entry key="app/src/main/res/layout/activity_meta_data_human_centric.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_meta_data_non_human_centric.xml" value="0.182518115942029" />
+        <entry key="app/src/main/res/layout/activity_meta_data_super_text.xml" value="0.35052083333333334" />
+        <entry key="app/src/main/res/layout/activity_meta_data_text.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_meta_data_translation.xml" value="0.327445652173913" />
+        <entry key="app/src/main/res/layout/activity_meta_data_word_image.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/activity_multiple_agreement_upload.xml" value="0.15104166666666666" />
+        <entry key="app/src/main/res/layout/activity_multiple_image_upload.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_multiple_video_upload.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_my_sign_consent.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_permission.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/activity_privacy_policy.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/activity_recordings.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/activity_select_language.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_sign_consent.xml" value="0.21" />
+        <entry key="app/src/main/res/layout/activity_signing_canvas.xml" value="0.16576086956521738" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.27760416666666665" />
+        <entry key="app/src/main/res/layout/activity_sub_audio_menu.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/activity_sub_text_menu.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/activity_super_meta_data_text.xml" value="0.26358695652173914" />
+        <entry key="app/src/main/res/layout/activity_super_metadata_text.xml" value="0.35052083333333334" />
+        <entry key="app/src/main/res/layout/activity_text_menu.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_thankyou.xml" value="0.31875" />
+        <entry key="app/src/main/res/layout/activity_trial_text.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_trial_user_menu2.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_txt_file_upload.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/activity_type_text.xml" value="0.19635416666666666" />
+        <entry key="app/src/main/res/layout/activity_type_text2.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_update_password.xml" value="0.26875" />
+        <entry key="app/src/main/res/layout/activity_upload.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_upload_agreement.xml" value="0.15104166666666666" />
+        <entry key="app/src/main/res/layout/activity_upload_captured_image.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_upload_human_agreement.xml" value="0.15217391304347827" />
+        <entry key="app/src/main/res/layout/activity_upload_image_with_caption.xml" value="0.17346014492753623" />
+        <entry key="app/src/main/res/layout/activity_upload_labeled_image_helper.xml" value="0.13854166666666667" />
+        <entry key="app/src/main/res/layout/activity_upload_multiple_text.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_user_dashboard.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_user_details.xml" value="0.182518115942029" />
+        <entry key="app/src/main/res/layout/activity_user_menu.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/activity_user_menu2.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_user_registration.xml" value="0.24010416666666667" />
+        <entry key="app/src/main/res/layout/activity_wait_for_approval.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/content_corpussmstext.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/corpus_layout.xml" value="0.35052083333333334" />
+        <entry key="app/src/main/res/layout/dashboard_cardview_item.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/doc_layout.xml" value="0.3392210144927536" />
+        <entry key="app/src/main/res/layout/dropdown_menu_popup_item.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/footer_layout.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/layout_toolbar_home.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/list_item_single.xml" value="0.17346014492753623" />
+        <entry key="app/src/main/res/layout/list_items.xml" value="0.17346014492753623" />
+        <entry key="app/src/main/res/layout/list_items_audio.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/list_items_text.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/loading_dailouge.xml" value="0.17980072463768115" />
+        <entry key="app/src/main/res/layout/multiple_audio_upload.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/noise_layout.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/pdf_layout.xml" value="0.3392210144927536" />
+        <entry key="app/src/main/res/layout/recording_layout.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/signature_pad.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/speaker_layout.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/speech_layout.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/stat_item_layout.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/stats_item.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/text_layout.xml" value="0.3392210144927536" />
+        <entry key="app/src/main/res/layout/textt_layout.xml" value="0.178125" />
+        <entry key="app/src/main/res/layout/toolbar_item.xml" value="0.17980072463768115" />
+        <entry key="app/src/main/res/layout/translation_layout.xml" value="0.178125" />
+        <entry key="app/src/main/res/layout/user_list_items.xml" value="0.17346014492753623" />
+        <entry key="app/src/main/res/layout/user_list_items_approve.xml" value="0.35885416666666664" />
+        <entry key="app/src/main/res/menu/data_major_cat_menu.xml" value="0.21145833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="SuppressKotlinCodeStyleNotification">
+    <option name="disableForAll" value="true" />
+  </component>
+</project>
