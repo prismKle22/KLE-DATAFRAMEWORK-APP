@@ -8,7 +8,7 @@ object Constants {
     //For minor updates update this version
     const val APK_SUB_VERSION_NO=3
     const val SHARED_PREF_ADMIN_EMAIL="admin@klesamsung"
-    const val BASE_URL = "http://210.212.192.31/"
+    const val BASE_URL = "http://210.212.192.31:8080/"
 //    const val BASE_URL = "http://192.168.0.110/" //tenda
     const val ERROR="java.net.ConnectException: Failed to connect to /210.212.192.31:80"
     const val FILE_UPLOAD_URL = BASE_URL + "phps/fileUpload.php"
